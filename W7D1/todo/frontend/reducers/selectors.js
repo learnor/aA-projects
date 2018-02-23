@@ -1,5 +1,1 @@
-export const allTodos = state => {
-  const keys = Object.keys(state.todos);
-  const todos = keys.map(key => state.todos[key]);
-  return todos;
-};
+export const allTodos = ({todos}) =>  Object.keys(todos).map(id => todos[id]);
